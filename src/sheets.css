@@ -1,0 +1,13 @@
+#sheet-sec{
+    display:inline-flex;
+    justify-content: space-around;
+    align-items:center;
+    align-content: center;
+    width:100vw;
+    flex-wrap:wrap;
+    height:50vh;
+    overflow-y:auto;
+    border:solid 1px rgb(210, 24, 24);
+    max-width:100%;
+    box-sizing: border-box;
+}
