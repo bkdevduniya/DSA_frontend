@@ -1,0 +1,23 @@
+#home-container{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: baseline;
+    align-content: baseline;
+    width:80vw;
+    height: fit-content;
+    box-sizing: border-box;
+    margin:auto;
+    margin-top: 10vh;
+    border:solid 1px rgb(23, 223, 146);
+}
+
+#recommend-search-sec{
+    margin:10px 0 10px 0;
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    height:20vh;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
