@@ -1,0 +1,138 @@
+/* #question-card{
+    display:flex;
+    flex-direction: column;
+    width:10vw;
+    height:8vh;
+    padding:5px;
+    border:solid 1px rgb(182, 67, 117);
+} */
+
+/* .problemcard {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .tag {
+    background-color: #6200ea;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  .difficulty {
+    font-size: 16px;
+    color: #757575;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+  }
+  
+  .problem-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  
+  .solve-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-sizing: border-box;
+  }
+  
+  .solve-button:hover {
+    background-color: #45a049;
+  }
+  
+  @media (max-width: 600px) {
+    .problem-card {
+      width: 90%;
+      margin: 10px;
+      box-sizing: border-box;
+    }
+  } */
+
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+    width:100%;
+    box-sizing: border-box;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .card .question-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    
+  }
+  
+  .card .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  
+  .card .tag {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    padding: 4px 8px;
+    color: #555;
+    font-size: 0.9rem;
+  }
+  
+  .card .platform-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .card .platform-link:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 600px) {
+    .card {
+      padding: 12px;
+    }
+  
+    .card .question-title {
+      font-size: 1.2rem;
+    }
+  
+    .card .platform-link {
+      font-size: 0.9rem;
+    }
+  
+    .card .tag {
+      font-size: 0.8rem;
+    }
+  }
+  
+  
