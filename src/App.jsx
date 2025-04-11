@@ -59,7 +59,7 @@ const App = () => {
           
           <div className="footer-section">
             <h3>Contact Info</h3>
-            <p><i className="fas fa-phone"></i>+91 7878186751</p>
+{/*             <p><i className="fas fa-phone"></i>+91 7878186751</p> */}
             <p><i className="fas fa-map-marker-alt"></i>IIT ROORKEE, jawahar bhawan</p>
           </div>
         </div>
