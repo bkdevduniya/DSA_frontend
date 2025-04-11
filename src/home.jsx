@@ -2,8 +2,6 @@ import React, { useState,useEffect, use } from "react";
 import { NavLink } from "react-router-dom";
 import "./home.css";
 import Recommended from "./recommendation";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { byPrefixAndName } from '@awesome.me/kit-KIT_CODE/icons'
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -45,7 +43,7 @@ const Home = () => {
               className="home-cp-search-input"
             />
             <button className="home-cp-search-button">
-            <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />
+            <i icon="fa-solid fa-magnifying-glass" />
             </button>
           </div>
           
