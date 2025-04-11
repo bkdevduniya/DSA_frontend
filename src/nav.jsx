@@ -11,7 +11,7 @@ const Navbar = (props) => {
                     <NavLink className="nav-link" to="/" end>Home</NavLink>
                     <NavLink className="nav-link" to="problemset">Problemset</NavLink>
                     <NavLink className="nav-link" to="sheets">Sheets</NavLink>
-                    <NavLink className="nav-link" to="recomended">Rcomended</NavLink>
+                    <NavLink className="nav-link" to="recomended">Recommended</NavLink>
                     {user&& <span>
                         <img src="./logos/boy.png" alt="Profile" />
                         <NavLink className="nav-link" to="profile">{user.name}</NavLink>
