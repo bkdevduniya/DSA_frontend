@@ -7,25 +7,30 @@ import App from "./src/App.jsx";
 import Home from "./src/home.jsx";
 import Problemset from "./src/problemset.jsx";
 import Profile from "./src/profile.jsx";
-import Auth from "./src/auth.jsx";
 import Sheets from "./src/sheets.jsx";
 import Recommend from "./src/recommendation.jsx";
 // Standalone pages
 import Login from "./src/login.jsx";
 import Signup from "./src/signup.jsx";
 import Admin from "./src/admin.jsx";
+import { DataProvider } from "./src/contexts/userContext.jsx"; 
 
 window.addEventListener("error", (event) => {
   console.error(event.error);
 })
+// window.onload= (event) => {
+//   const path=window.location.pathname;
+//   if(!path.startsWith("/problemset"))
+//   window.localStorage.removeItem("searchParms");
+// };
 
 // Define the router
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path="/" element={<App />}>
+      <Route path="/" element={<DataProvider><App /></DataProvider>}>
         <Route index element={<Home />} />
-        <Route path="problemset" element={<Problemset />} />
+        <Route path="problemset/*" element={<Problemset />} />
         <Route path="profile" element={<Profile />} />
         <Route path='recommended' element={<Recommend />} />
         <Route path="sheets" element={<Sheets />} />
@@ -37,7 +42,6 @@ const router = createBrowserRouter(
     </>
   )
 );
-
 // Render the app
 createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />
