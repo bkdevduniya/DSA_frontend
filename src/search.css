@@ -1,9 +1,0 @@
-#search{
-    display:flex;
-    flex-direction: column;
-    align-content: baseline;
-    align-items: baseline;
-    width:20vw;
-    box-sizing: border-box;
-    border:solid 1px rgb(222, 151, 51);
-}
