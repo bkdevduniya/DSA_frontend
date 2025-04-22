@@ -42,7 +42,7 @@ const Profile = () => {
         });
         return ({ 
           topic, 
-          score:totalScore === 0 ? 0 : (score/totalScore)*100,
+          score:totalScore === 0 ? 0 : Math.rounnd((score/totalScore)*100),
           category: (score/totalScore)*100 >= 70 ? 'strong' :(score/totalScore)*100 >= 30 ? 'average' : 'weak'
         });
       })
@@ -50,7 +50,7 @@ const Profile = () => {
     
     const overallCurScore = progressArray.reduce((acc, t) => acc + t.score, 0);
     const overallMaxScore = Object.values(userData.stats?.tags||{}).reduce((acc, t) => acc + t[3], 0);
-    overallScore = parseInt((overallCurScore / overallMaxScore) * 100);
+    overallScore = Math.round((overallCurScore / overallMaxScore) * 100);
     
     strongTopics = progressArray.filter(t => t.category === 'strong');
     averageTopics = progressArray.filter(t => t.category === 'average');
