@@ -50,7 +50,7 @@ const Profile = () => {
     
     const overallCurScore = progressArray.reduce((acc, t) => acc + t.score, 0);
     const overallMaxScore = Object.values(userData.stats?.tags||{}).reduce((acc, t) => acc + t[3], 0);
-    overallScore = Math.round((overallCurScore / overallMaxScore) * 100);
+    overallScore = parseInt((overallCurScore / overallMaxScore) * 100);
     
     strongTopics = progressArray.filter(t => t.category === 'strong');
     averageTopics = progressArray.filter(t => t.category === 'average');
