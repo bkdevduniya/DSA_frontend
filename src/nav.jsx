@@ -25,12 +25,11 @@ const Navbar = ({userData}) => {
     const logout = () => {
         const logoutUser = async () => {
             const res = await axios.post('api/logout', {}, { withCredentials: true });
-            console.log(res.data);
+            setDropdownOpen(false);
+            window.location.href="/";
         }
         try {
             logoutUser();
-            setDropdownOpen(false);
-            window.location.href="/";
         }
         catch(err) {
             console.log(err);
