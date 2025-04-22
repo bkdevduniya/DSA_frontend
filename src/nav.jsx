@@ -25,7 +25,6 @@ const Navbar = ({userData}) => {
     const logout = () => {
         const logoutUser = async () => {
             const res = await axios.post('api/logout', {}, { withCredentials: true });
-            window.localStorage.removeItem("userData");
             console.log(res.data);
         }
         try {
