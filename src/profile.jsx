@@ -42,7 +42,7 @@ const Profile = () => {
         });
         return ({ 
           topic, 
-          score:totalScore === 0 ? 0 : Math.rounnd((score/totalScore)*100),
+          score:totalScore === 0 ? 0 : Math.round((score/totalScore)*100),
           category: (score/totalScore)*100 >= 70 ? 'strong' :(score/totalScore)*100 >= 30 ? 'average' : 'weak'
         });
       })
