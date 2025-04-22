@@ -9,6 +9,8 @@ import Problemset from "./src/problemset.jsx";
 import Profile from "./src/profile.jsx";
 import Sheets from "./src/sheets.jsx";
 import Recommend from "./src/recommendation.jsx";
+import Credentials from "./src/credentials.jsx";
+
 // Standalone pages
 import Login from "./src/login.jsx";
 import Signup from "./src/signup.jsx";
@@ -33,7 +35,8 @@ const router = createBrowserRouter(
         <Route path="problemset/*" element={<Problemset />} />
         <Route path="profile" element={<Profile />} />
         <Route path='recommended' element={<Recommend />} />
-        <Route path="sheets" element={<Sheets />} />
+        <Route path="sheets/*" element={<Sheets />} />
+        <Route path="credentials" element={<Credentials />}></Route>
         <Route path="*" element={<h1>Not Found</h1>} />
       </Route>
       <Route path="/login" element={<Login />} />
