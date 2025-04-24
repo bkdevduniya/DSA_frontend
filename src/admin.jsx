@@ -333,7 +333,7 @@ const AdminPage = () => {
                         <option value="searching">Searching</option>
                         <option value="binary search">Binary Search</option>
                         <option value="depth first search">Depth First Search</option>
-                        <option value="breadth-first search">Breadth First Search</option>
+                        <option value="breadth first search">Breadth First Search</option>
                         <option value="topological sort">Topological Sort</option>
                         <option value="prefix sum">Prefix Sum</option>
                       </optgroup>
@@ -483,7 +483,7 @@ const AdminPage = () => {
                         <option value="searching">Searching</option>
                         <option value="binary search">Binary Search</option>
                         <option value="depth first search">Depth First Search</option>
-                        <option value="breadth-first search">Breadth First Search</option>
+                        <option value="breadth first search">Breadth First Search</option>
                         <option value="topological sort">Topological Sort</option>
                         <option value="prefix sum">Prefix Sum</option>
                       </optgroup>
