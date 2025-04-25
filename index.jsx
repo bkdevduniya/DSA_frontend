@@ -15,7 +15,9 @@ import Credentials from "./src/credentials.jsx";
 import Login from "./src/login.jsx";
 import Signup from "./src/signup.jsx";
 import Admin from "./src/admin.jsx";
-import { DataProvider } from "./src/contexts/userContext.jsx"; 
+import ForgotPassword from "./src/forgotPassword.jsx";
+import ResetPassword from "./src/resetPassword.jsx";
+
 
 window.addEventListener("error", (event) => {
   console.error(event.error);
@@ -30,18 +32,22 @@ window.addEventListener("error", (event) => {
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path="/" element={<DataProvider><App /></DataProvider>}>
+      <Route path="/" element={<App />}>
         <Route index element={<Home />} />
         <Route path="problemset/*" element={<Problemset />} />
         <Route path="profile" element={<Profile />} />
         <Route path='recommended' element={<Recommend />} />
-        <Route path="sheets/*" element={<Sheets />} />
+        <Route path="sheets/*" element={<Sheets />}>
+          {/* <Route path="questions/*" element={<SheetQuestions />} /> */}
+        </Route>
         <Route path="credentials" element={<Credentials />}></Route>
         <Route path="*" element={<h1>Not Found</h1>} />
       </Route>
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/admin" element={<Admin />} />
+      <Route path="/forgotpassword" element={<ForgotPassword />} />
+      <Route path="/resetpassword" element={<ResetPassword />} />
     </>
   )
 );
